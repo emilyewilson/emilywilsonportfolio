@@ -1,0 +1,179 @@
+
+body {
+	font-family: "poiret one", cursive;
+	background-color: #cddce5;
+}
+
+h2 {
+	font-family: "Poiret One", cursive;
+	font-size: 30px;
+}
+
+h3 {
+	font-family: "lexend giga", sans-serif;
+	font-size: 16px;
+}
+
+h6 {
+	font-family: "poiret one", cursive;
+	font-size: 15px;
+	margin: 0px;
+}
+
+/***** GRID *****/
+
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.half-width {
+	width: 600px;
+	float: left;
+}
+
+.third-width {
+	width: 400px;
+	float: left;
+}
+
+/***** HEADER *****/
+
+header {
+	border-bottom: 4px solid #c28C85;
+	height: 150px;
+}
+
+header h1 {
+	font-family: "Alice", serif;
+	font-size: 85px;
+	color: #C28C85;
+	margin-top: 25px;
+	margin-bottom: 45px;
+	margin-left: 100px;
+	letter-spacing: 25px;
+}
+
+header nav {
+	font-family: "poiret one", cursive;
+	word-spacing: 50px;
+	margin-top: 50px;
+	text-align: right;
+}
+
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	text-decoration: none;
+	color: #C28C85;
+	font-size: 36px;
+}
+
+
+
+/***** ABOUT *****/
+
+#about {
+	height: 475px;
+	padding: 10px;
+	background-color: #012340;
+	color: #F2F2F2;
+	text-align: center;
+	border-bottom: 4px solid #c28C85;
+}
+
+#about p {
+	margin: 40px auto;
+	width: 800px;
+	font-size: 22px;
+}
+
+#about img {
+	width: 200px;
+	height: 200px;
+	border: 5px solid #4A738C;
+}
+
+/***** PORTFOLIO *****/
+
+#portfolio {
+	text-align: center;
+	width: 1200px;
+	height: 450px;
+	margin: auto;
+	clear: both;
+	color: #012340;
+}
+
+#portfolio h2 {
+	margin-bottom: 40px;
+}
+
+#portfolio img {
+	padding: 15px;
+}
+
+/***** LET'S CONNECT *****/
+
+#contact {
+	height: 175px;
+	margin: auto;
+	background-color: #012340;
+	border-top: 4px solid #c28C85;
+	color: #F2f2f2;
+	text-align: left;
+	clear: both;
+	overflow: auto;
+}
+
+#contact #invite {
+	margin-left: 100px;
+	width: 400px;
+	float: left;
+}
+
+#contact h2 {
+	margin-bottom: 10px;
+}
+
+#contact p {
+	font-size: 22px;
+}
+
+#contact #info {
+	margin-left: 200px;
+	width: 400px;
+	float: left;
+
+}
+
+#contact ul {
+	list-style: none;
+	margin-top: 30px;
+	line-height: 35px;
+}
+
+#contact ul li {
+	font-size: 22px;
+}
+
+#contact a {
+	color: #F2f2f2;
+	text-decoration: none;
+}
+
+
+/***** FOOTER *****/
+	
+footer {
+	border-top: 4px solid #F2F2F2;
+	border-bottom: 4px solid #F2f2f2;
+	height: 50px;
+	padding-top: 30px;
+	color: #012340;
+	background-color: #c28C85;
+	text-align: center;
+	clear: both;
+}
+
