@@ -1,178 +1,389 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
-body {
-	font-family: "poiret one", cursive;
-	background-color: #cddce5;
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
-h2 {
-	font-family: "Poiret One", cursive;
-	font-size: 30px;
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* General Styles */
+
+body {
+  height: 100%;
+  /* set height to 100% - these are important for allowing content to vertically align */
+}
+
+h1 {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(36, 49, 77);
+  font-size: 3em;
 }
 
 h3 {
-	font-family: "lexend giga", sans-serif;
-	font-size: 16px;
+  margin: 0;
+
+  /*Large Background Image - Landing Page Only*/
 }
 
-h6 {
-	font-family: "poiret one", cursive;
-	font-size: 15px;
-	margin: 0px;
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  height: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(2, 60, 126, 0.3);
+  letter-spacing: 10px;
+  font-size: 2em;
+  font-weight: lighter;
+  border-bottom: 2px double rgba(2, 60, 126, 0.3);
 }
 
-/***** GRID *****/
-
-.full-width {
-	width: 1200px;
-	margin: 0 auto;
+.enter a {
+  text-decoration: none;
+  color: rgba(2, 60, 126, 0.5);
 }
 
-.half-width {
-	width: 600px;
-	float: left;
+.name h1 {
+  text-align: center;
+  font-variant: small-caps;
+  margin: 15px 0 10px 0;
+  letter-spacing: 5px;
 }
 
-.third-width {
-	width: 400px;
-	float: left;
+#landing-img {
+  background: url(../img/fritters.png) no-repeat fixed;
+  background-size: 100%;
+  min-height: 100%;
+  width: 100%;
+  /* set height to 100% - these are important for allowing content to vertically align */
 }
 
-/***** HEADER *****/
-
-header {
-	border-bottom: 4px solid #c28C85;
-	height: 150px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
+  margin-top: 0;
+  margin-bottom: 20px;
+  height: calc(100% - 85px);
+  width: 100%;
 }
 
-header h1 {
-	font-family: "Alice", serif;
-	font-size: 85px;
-	color: #C28C85;
-	margin-top: 25px;
-	margin-bottom: 45px;
-	letter-spacing: 25px;
+#content {
+  /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  background: rgba(2, 60, 126, 0.35);
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 1.5em;
+  border-radius: 10px;
+  margin-top: 75px;
+  padding: 0px 30px;
+  width: 65%;
+  height: 90%;
 }
 
-header nav {
-	font-family: "poiret one", cursive;
-	word-spacing: 50px;
-	margin-top: 50px;
-	text-align: right;
+#content h2 {
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+  width: 225px;
+  padding-right: 0px;
 }
 
-header ul li {
-	display: inline-block;
-}
-header ul li a {
-	text-decoration: none;
-	color: #C28C85;
-	font-size: 36px;
+#content h2 span {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 0.75em;
 }
 
-
-
-/***** ABOUT *****/
-
-#about {
-	height: 475px;
-	padding: 10px;
-	background-color: #012340;
-	color: #F2F2F2;
-	text-align: center;
-	border-bottom: 4px solid #c28C85;
+#content p {
+  width: 200px;
 }
 
-#about p {
-	margin: 40px auto;
-	width: 800px;
-	font-size: 22px;
-}
-
-#about img {
-	width: 200px;
-	height: 200px;
-	border: 5px solid #4A738C;
-}
-
-/***** PORTFOLIO *****/
-
-#portfolio {
-	text-align: center;
-	width: 1200px;
-	height: 450px;
-	margin: auto;
-	clear: both;
-	color: #012340;
-}
-
-#portfolio h2 {
-	margin-bottom: 40px;
-}
-
-#portfolio img {
-	padding: 15px;
-}
-
-/***** LET'S CONNECT *****/
-
-#contact {
-	height: 175px;
-	margin: auto;
-	background-color: #012340;
-	border-top: 4px solid #c28C85;
-	color: #F2f2f2;
-	text-align: left;
-	clear: both;
-	overflow: auto;
-}
-
-#contact #invite {
-	margin-left: 100px;
-	width: 400px;
-	float: left;
-}
-
-#contact h2 {
-	margin-bottom: 10px;
-}
-
-#contact p {
-	font-size: 22px;
-}
-
-#contact #info {
-	margin-left: 200px;
-	width: 400px;
-	float: left;
-
-}
-
-#contact ul {
-	list-style: none;
-	margin-top: 30px;
-	line-height: 35px;
-}
-
-#contact ul li {
-	font-size: 22px;
-}
-
-#contact a {
-	color: #F2f2f2;
-	text-decoration: none;
-}
-
-
-/***** FOOTER *****/
-	
 footer {
-	border-top: 4px solid #F2F2F2;
-	border-bottom: 4px solid #F2f2f2;
-	height: 50px;
-	padding-top: 30px;
-	color: #012340;
-	background-color: #c28C85;
-	text-align: center;
-	clear: both;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(2, 60, 126, 0.5);
+  padding: 20px 0;
+  letter-spacing: 10px;
+  font-size: 0.5em;
+  font-weight: lighter;
 }
 
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for Tablet */
+  #landing-img {
+    background: url(../img/fritters-vertical.jpg) no-repeat fixed;
+    background-size: 100%;
+    height: 640px;
+    margin: 0;
+    /* set height to 100% - these are important for allowing content to vertically align */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for Desktop */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
