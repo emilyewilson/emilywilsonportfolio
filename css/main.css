@@ -291,12 +291,50 @@ footer {
    ========================================================================== */
 @media only screen and (min-width: 768px) {
   /* Style adjustments for Tablet */
+
+  header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .enter {
+    justify-content: flex-end;
+    align-items: center;
+    order: 2;
+    align-self: flex-start;
+    padding-top: 30px;
+    margin-right: 100px;
+  }
+
+  .name {
+    order: 1;
+    flex-grow: 1;
+  }
+
   #landing-img {
-    background: url(../img/fritters-vertical.jpg) no-repeat fixed;
-    background-size: 100%;
-    height: 640px;
-    margin: 0;
-    /* set height to 100% - these are important for allowing content to vertically align */
+    margin: auto;
+    width: 80%;
+  }
+  .wrapper {
+    min-height: 700px;
+    margin-bottom: 0;
+  }
+
+  #content {
+    margin-top: -50px;
+  }
+
+  #content h2 {
+    width: 300px;
+    font-size: 2em;
+    line-height: 1em;
+  }
+  #content p {
+    font-size: 1.25em;
+    width: 300px;
+    margin: 30px 0;
   }
 }
 
